@@ -1,0 +1,507 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>School Clusters Map</title>
+        <script type="text/javascript" src="https://map.vworld.kr/js/vworldMapInit.js.do?apiKey=27F7217A-0326-38B2-BC9D-BE196967A132&domain=www.kofac.re.kr"></script>
+    </head>
+    <body>
+        <div id="map" style="width: 100%; height: 600px;"></div>
+        <script>
+            var map = new vworld.Map("map", {
+                basemapType: vworld.BasemapType.GRAPHIC,
+                controlDensity: vworld.DensityType.FULL,
+                interaction: vworld.InteractionType.ALL,
+                controlsAutoArrange: true,
+                homePosition: vworld.PositionType.LATLNG,
+                initPosition: vworld.PositionType.LATLNG,
+                initZoom: 12
+            });
+
+            var markers = {};
+    
+            markers[0] = new vworld.Marker({
+                position: new vworld.LatLng(37.512362035654206, 126.8488152939379),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 1 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[0]);
+        
+            markers[1] = new vworld.Marker({
+                position: new vworld.LatLng(37.685214291922975, 126.99807076404451),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 2 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[1]);
+        
+            markers[2] = new vworld.Marker({
+                position: new vworld.LatLng(37.61959818254342, 126.81375540844608),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 3 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[2]);
+        
+            markers[3] = new vworld.Marker({
+                position: new vworld.LatLng(37.57959754525911, 127.16372816083151),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 4 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[3]);
+        
+            markers[4] = new vworld.Marker({
+                position: new vworld.LatLng(37.44680559213273, 126.90351199264),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 5 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[4]);
+        
+            markers[5] = new vworld.Marker({
+                position: new vworld.LatLng(37.44679835610086, 127.0650089137416),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 6 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[5]);
+        
+            markers[6] = new vworld.Marker({
+                position: new vworld.LatLng(37.41742508365046, 126.92468443043576),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 7 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[6]);
+        
+            markers[7] = new vworld.Marker({
+                position: new vworld.LatLng(37.65985284373248, 127.00802720847112),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 8 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[7]);
+        
+            markers[8] = new vworld.Marker({
+                position: new vworld.LatLng(37.58033450352296, 127.01868411173731),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 9 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[8]);
+        
+            markers[9] = new vworld.Marker({
+                position: new vworld.LatLng(37.612421773338816, 126.87394178221021),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 10 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[9]);
+        
+            markers[10] = new vworld.Marker({
+                position: new vworld.LatLng(37.40617534828874, 127.18783385110582),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 11 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[10]);
+        
+            markers[11] = new vworld.Marker({
+                position: new vworld.LatLng(37.690972955648604, 127.11005312934445),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 12 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[11]);
+        
+            markers[12] = new vworld.Marker({
+                position: new vworld.LatLng(37.64973279224013, 127.17579957662568),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 13 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[12]);
+        
+            markers[13] = new vworld.Marker({
+                position: new vworld.LatLng(37.463701733203486, 127.15793094017106),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 14 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[13]);
+        
+            markers[14] = new vworld.Marker({
+                position: new vworld.LatLng(37.45454749016213, 127.03915999152443),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 15 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[14]);
+        
+            markers[15] = new vworld.Marker({
+                position: new vworld.LatLng(37.45502135295603, 127.16874969400925),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 16 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[15]);
+        
+            markers[16] = new vworld.Marker({
+                position: new vworld.LatLng(37.49127267288786, 126.83539700082076),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 17 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[16]);
+        
+            markers[17] = new vworld.Marker({
+                position: new vworld.LatLng(37.55742692948967, 126.87839314496766),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 18 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[17]);
+        
+            markers[18] = new vworld.Marker({
+                position: new vworld.LatLng(37.52958350559263, 126.81809091556421),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 19 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[18]);
+        
+            markers[19] = new vworld.Marker({
+                position: new vworld.LatLng(37.48736874205941, 126.9301321323053),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 20 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[19]);
+        
+            markers[20] = new vworld.Marker({
+                position: new vworld.LatLng(37.58355586841672, 126.9554709158758),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 21 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[20]);
+        
+            markers[21] = new vworld.Marker({
+                position: new vworld.LatLng(37.44184815819561, 126.90853961270956),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 22 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[21]);
+        
+            markers[22] = new vworld.Marker({
+                position: new vworld.LatLng(37.487643394560564, 127.13149500366077),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 23 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[22]);
+        
+            markers[23] = new vworld.Marker({
+                position: new vworld.LatLng(37.50990855298811, 126.94270133067744),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 24 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[23]);
+        
+            markers[24] = new vworld.Marker({
+                position: new vworld.LatLng(37.53682099526511, 126.91237380387496),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 25 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[24]);
+        
+            markers[25] = new vworld.Marker({
+                position: new vworld.LatLng(37.635552788417904, 127.0170784332633),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 26 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[25]);
+        
+            markers[26] = new vworld.Marker({
+                position: new vworld.LatLng(37.45990213464751, 126.8563696899899),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 27 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[26]);
+        
+            markers[27] = new vworld.Marker({
+                position: new vworld.LatLng(37.55427033152409, 127.12087879230162),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 28 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[27]);
+        
+            markers[28] = new vworld.Marker({
+                position: new vworld.LatLng(37.577724370658615, 126.82982025747191),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 29 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[28]);
+        
+            markers[29] = new vworld.Marker({
+                position: new vworld.LatLng(37.413935123815996, 127.19475477464022),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 30 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[29]);
+        
+            markers[30] = new vworld.Marker({
+                position: new vworld.LatLng(37.582263455570434, 127.10889790771867),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 31 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[30]);
+        
+            markers[31] = new vworld.Marker({
+                position: new vworld.LatLng(37.45115723710619, 126.87948627261366),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 32 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[31]);
+        
+            markers[32] = new vworld.Marker({
+                position: new vworld.LatLng(37.41951547789558, 126.80220884684944),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 33 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[32]);
+        
+            markers[33] = new vworld.Marker({
+                position: new vworld.LatLng(37.684665661176005, 127.12618457138194),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 34 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[33]);
+        
+            markers[34] = new vworld.Marker({
+                position: new vworld.LatLng(37.68968960992237, 127.08274293753905),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 35 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[34]);
+        
+            markers[35] = new vworld.Marker({
+                position: new vworld.LatLng(37.64251920443494, 127.0916028672164),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_green.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 36 (Cluster 2)'
+                })
+            });
+            map.addMarker(markers[35]);
+        
+            markers[36] = new vworld.Marker({
+                position: new vworld.LatLng(37.49138413075201, 127.10850813867438),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_red.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 37 (Cluster 0)'
+                })
+            });
+            map.addMarker(markers[36]);
+        
+            markers[37] = new vworld.Marker({
+                position: new vworld.LatLng(37.42930163420191, 126.82961786069363),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 38 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[37]);
+        
+            markers[38] = new vworld.Marker({
+                position: new vworld.LatLng(37.60526990795365, 126.94338629141771),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_blue.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 39 (Cluster 1)'
+                })
+            });
+            map.addMarker(markers[38]);
+        
+            markers[39] = new vworld.Marker({
+                position: new vworld.LatLng(37.53204574812188, 126.84634762381005),
+                icon: new vworld.Icon({
+                    src: 'http://map.vworld.kr/images/poi/pin_purple.png',
+                    size: new vworld.Size(32, 32)
+                }),
+                popup: new vworld.Popup({
+                    content: 'School 40 (Cluster 3)'
+                })
+            });
+            map.addMarker(markers[39]);
+        
+        </script>
+    </body>
+    </html>
+    

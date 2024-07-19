@@ -1,0 +1,1 @@
+{"response" : {"service" : {"name" : "image", "version" : "2.0", "operation" : "GetMap", "time" : "1(ms)"}, "status" : "ERROR", "error" : {"level" : "1", "code" : "PARAM_REQUIRED", "text" : "필수 파라미터인 center가 없어서 요청을 처리할수 없습니다."}}}
